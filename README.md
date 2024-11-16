@@ -14,7 +14,7 @@
     - Learning Data
 5. Module 4 - Data Set Repair
    - Government Data
-   - Learning Data
+   - Train Data
 6. Git Repository
 
 ## 1. Overview
@@ -113,7 +113,7 @@ This module involves cleaning and repairing two datasets to ensure data integrit
 
 ### Government Data
 This dataset contains monthly firearm background check records across U.S. states, sourced from BuzzFeed’s **NICS Firearm Background Checks** dataset.  
-**File**: `nics_firearm_background_checks.csv`  
+**File**: `nics_firearm_background_checks-cleaned.csv`  
 
 **Data Cleaning and Issue Mitigation**:
 
@@ -131,7 +131,7 @@ This dataset contains monthly firearm background check records across U.S. state
 
 ### Train Data
 This dataset contains news articles used for binary classification to determine if articles are real or fake.  
-**File**: `train.csv`
+**File**: `train-cleaned.csv`
 
 **Data Cleaning and Issue Mitigation**:
 
