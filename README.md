@@ -15,7 +15,9 @@
 5. Module 4 - Data Set Repair
    - Government Data
    - Train Data
-6. Git Repository
+6. Module 4 - Data Visualization
+   - Government Data
+8. Git Repository
 
 ## 1. Overview
 This repository contains assignments focused on data visualization and exploration, utilizing various tools and techniques to create and analyze data-driven insights.
@@ -59,6 +61,7 @@ The repository is structured as follows:
 ├── module4/
 │   ├── Government Data/
 │   │   └── nics-firearm-background-checks-cleaned.csv
+│   │   └── nics-visualizations-yearly-and-type.twbx
 │   ├── Train Data/
 │   │   └── train-cleaned.rar
 ├── README.md
@@ -143,5 +146,36 @@ This dataset contains news articles used for binary classification to determine 
    - **Issue**: 1,886 duplicate rows were found in the dataset. Duplicate rows can lead to inaccuracies in analysis by skewing results, especially in aggregate metrics.
    - **Mitigation**: The 1,886 duplicate rows were identified and removed to ensure the uniqueness and accuracy of each entry.
 
-## 5. Git Repository
+
+## 6. Module 4 - Data Visualization
+
+### Dataset: Government Data - NICS Firearm Background Checks
+
+**File**: `nics-firearm-background-checks-cleaned.csv`  
+**Visualization Tool**: Tableau  
+**Visualization File**: `nics-visualizations-yearly-and-type.twb`
+
+This Tableau project presents two visualizations created from the NICS Firearm Background Checks dataset, focusing on trends over time and a breakdown by firearm type. These visualizations were designed to apply principles of **line**, **shape**, and **volume** to highlight different focal points.
+
+### Visualizations
+
+#### **1. Yearly Trends of Firearm Background Checks (Line Chart)**
+- **Focal Point**: Displays the yearly trends of total firearm background checks over time.
+- **Design Principle Used**: The **line principle** is employed to emphasize the direction and change in background check totals over the years.
+- **Key Insights**:
+  - Identifies trends in firearm background checks over time, including peaks and declines.
+  - Helps understand year-to-year fluctuations in background checks.
+
+#### **2. Firearm Types Breakdown (Stacked Bar Chart)**
+- **Focal Point**: Highlights the contribution of different firearm types (`handgun`, `long_gun`, `other`) to the overall background checks.
+- **Design Principle Used**: The **shape/volume principle** is used in the stacked bar chart to visually compare the proportions of firearm types.
+- **Key Insights**:
+  - Allows comparison of the relative volume of firearm background checks for each type.
+  - Shows how firearm types contribute to yearly or statewide totals.
+
+### Note on Data Cleaning
+
+- **Date Format**: The date format in the `month` column was standardized to ensure consistency and compatibility with Tableau visualizations.
+
+## 7. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
