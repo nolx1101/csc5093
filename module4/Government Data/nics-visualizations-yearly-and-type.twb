@@ -1,0 +1,901 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='nics-firearm-background-checks-cleaned' inline='true' name='federated.0o4qpm20273m1e14gw0p70qfu3mv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nics-firearm-background-checks-cleaned' name='textscan.1dky0531bpg3yq11zeouv0noha9y'>
+            <connection class='textscan' directory='C:/Users/ndriq/OneDrive/Desktop' filename='nics-firearm-background-checks-cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Handgun]' />
+            <value name='[Long Gun]' />
+            <value name='[Other]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[nics-firearm-background-checks-cleaned.csv].[handgun]' />
+              <field name='[nics-firearm-background-checks-cleaned.csv].[long_gun]' />
+              <field name='[nics-firearm-background-checks-cleaned.csv].[other]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1dky0531bpg3yq11zeouv0noha9y' name='nics-firearm-background-checks-cleaned.csv' table='[nics-firearm-background-checks-cleaned#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='year' ordinal='0' />
+              <column datatype='string' name='state' ordinal='1' />
+              <column datatype='integer' name='permit' ordinal='2' />
+              <column datatype='integer' name='permit_recheck' ordinal='3' />
+              <column datatype='integer' name='handgun' ordinal='4' />
+              <column datatype='integer' name='long_gun' ordinal='5' />
+              <column datatype='integer' name='other' ordinal='6' />
+              <column datatype='integer' name='multiple' ordinal='7' />
+              <column datatype='integer' name='admin' ordinal='8' />
+              <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+              <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+              <column datatype='integer' name='prepawn_other' ordinal='11' />
+              <column datatype='integer' name='redemption_handgun' ordinal='12' />
+              <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+              <column datatype='integer' name='redemption_other' ordinal='14' />
+              <column datatype='integer' name='returned_handgun' ordinal='15' />
+              <column datatype='integer' name='returned_long_gun' ordinal='16' />
+              <column datatype='integer' name='returned_other' ordinal='17' />
+              <column datatype='integer' name='private_sale_handgun' ordinal='18' />
+              <column datatype='integer' name='private_sale_long_gun' ordinal='19' />
+              <column datatype='integer' name='private_sale_other' ordinal='20' />
+              <column datatype='integer' name='return_to_seller_handgun' ordinal='21' />
+              <column datatype='integer' name='return_to_seller_long_gun' ordinal='22' />
+              <column datatype='integer' name='totals' ordinal='23' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[permit]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>permit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permit_recheck</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[permit_recheck]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>permit_recheck</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>multiple</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[multiple]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>multiple</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[admin]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>admin</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_handgun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>prepawn_handgun</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_long_gun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>prepawn_long_gun</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prepawn_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prepawn_other]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>prepawn_other</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_handgun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>redemption_handgun</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_long_gun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>redemption_long_gun</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>redemption_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[redemption_other]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>redemption_other</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_handgun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>returned_handgun</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_long_gun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>returned_long_gun</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returned_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[returned_other]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>returned_other</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_handgun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>private_sale_handgun</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_long_gun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>private_sale_long_gun</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>private_sale_other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[private_sale_other]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>private_sale_other</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_handgun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_handgun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>return_to_seller_handgun</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_to_seller_long_gun</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[return_to_seller_long_gun]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>return_to_seller_long_gun</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[totals]</local-name>
+            <parent-name>[nics-firearm-background-checks-cleaned.csv]</parent-name>
+            <remote-alias>totals</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='nics-firearm-background-checks-cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF]' role='measure' type='quantitative' />
+      <column caption='Admin' datatype='integer' name='[admin]' role='measure' type='quantitative' />
+      <column caption='Multiple' datatype='integer' name='[multiple]' role='measure' type='quantitative' />
+      <column caption='Permit' datatype='integer' name='[permit]' role='measure' type='quantitative' />
+      <column caption='Permit Recheck' datatype='integer' name='[permit_recheck]' role='measure' type='quantitative' />
+      <column caption='Prepawn Handgun' datatype='integer' name='[prepawn_handgun]' role='measure' type='quantitative' />
+      <column caption='Prepawn Long Gun' datatype='integer' name='[prepawn_long_gun]' role='measure' type='quantitative' />
+      <column caption='Prepawn Other' datatype='integer' name='[prepawn_other]' role='measure' type='quantitative' />
+      <column caption='Private Sale Handgun' datatype='integer' name='[private_sale_handgun]' role='measure' type='quantitative' />
+      <column caption='Private Sale Long Gun' datatype='integer' name='[private_sale_long_gun]' role='measure' type='quantitative' />
+      <column caption='Private Sale Other' datatype='integer' name='[private_sale_other]' role='measure' type='quantitative' />
+      <column caption='Redemption Handgun' datatype='integer' name='[redemption_handgun]' role='measure' type='quantitative' />
+      <column caption='Redemption Long Gun' datatype='integer' name='[redemption_long_gun]' role='measure' type='quantitative' />
+      <column caption='Redemption Other' datatype='integer' name='[redemption_other]' role='measure' type='quantitative' />
+      <column caption='Return To Seller Handgun' datatype='integer' name='[return_to_seller_handgun]' role='measure' type='quantitative' />
+      <column caption='Return To Seller Long Gun' datatype='integer' name='[return_to_seller_long_gun]' role='measure' type='quantitative' />
+      <column caption='Returned Handgun' datatype='integer' name='[returned_handgun]' role='measure' type='quantitative' />
+      <column caption='Returned Long Gun' datatype='integer' name='[returned_long_gun]' role='measure' type='quantitative' />
+      <column caption='Returned Other' datatype='integer' name='[returned_other]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Totals' datatype='integer' name='[totals]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' type='palette'>
+            <map to='#98d9e4'>
+              <bucket>&quot;Handgun&quot;</bucket>
+            </map>
+            <map to='#ef8a0c'>
+              <bucket>&quot;Long Gun&quot;</bucket>
+            </map>
+            <map to='#fcc66d'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='nics-firearm-background-checks-cleaned.csv' id='nics-firearm-background-checks-cleaned.csv_5F8EE09B0D6B4509B9C40D74147790EF'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Handgun]' />
+                  <value name='[Long Gun]' />
+                  <value name='[Other]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[nics-firearm-background-checks-cleaned.csv].[handgun]' />
+                    <field name='[nics-firearm-background-checks-cleaned.csv].[long_gun]' />
+                    <field name='[nics-firearm-background-checks-cleaned.csv].[other]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1dky0531bpg3yq11zeouv0noha9y' name='nics-firearm-background-checks-cleaned.csv' table='[nics-firearm-background-checks-cleaned#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' name='year' ordinal='0' />
+                    <column datatype='string' name='state' ordinal='1' />
+                    <column datatype='integer' name='permit' ordinal='2' />
+                    <column datatype='integer' name='permit_recheck' ordinal='3' />
+                    <column datatype='integer' name='handgun' ordinal='4' />
+                    <column datatype='integer' name='long_gun' ordinal='5' />
+                    <column datatype='integer' name='other' ordinal='6' />
+                    <column datatype='integer' name='multiple' ordinal='7' />
+                    <column datatype='integer' name='admin' ordinal='8' />
+                    <column datatype='integer' name='prepawn_handgun' ordinal='9' />
+                    <column datatype='integer' name='prepawn_long_gun' ordinal='10' />
+                    <column datatype='integer' name='prepawn_other' ordinal='11' />
+                    <column datatype='integer' name='redemption_handgun' ordinal='12' />
+                    <column datatype='integer' name='redemption_long_gun' ordinal='13' />
+                    <column datatype='integer' name='redemption_other' ordinal='14' />
+                    <column datatype='integer' name='returned_handgun' ordinal='15' />
+                    <column datatype='integer' name='returned_long_gun' ordinal='16' />
+                    <column datatype='integer' name='returned_other' ordinal='17' />
+                    <column datatype='integer' name='private_sale_handgun' ordinal='18' />
+                    <column datatype='integer' name='private_sale_long_gun' ordinal='19' />
+                    <column datatype='integer' name='private_sale_other' ordinal='20' />
+                    <column datatype='integer' name='return_to_seller_handgun' ordinal='21' />
+                    <column datatype='integer' name='return_to_seller_long_gun' ordinal='22' />
+                    <column datatype='integer' name='totals' ordinal='23' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Yearly Trend of Firearm Background Checks'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Yearly Trend of Firearm Background Checks</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nics-firearm-background-checks-cleaned' name='federated.0o4qpm20273m1e14gw0p70qfu3mv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o4qpm20273m1e14gw0p70qfu3mv'>
+            <column-instance column='[totals]' derivation='Sum' name='[sum:totals:qk]' pivot='key' type='quantitative' />
+            <column caption='Totals' datatype='integer' name='[totals]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0o4qpm20273m1e14gw0p70qfu3mv].[sum:totals:qk]</rows>
+        <cols>[federated.0o4qpm20273m1e14gw0p70qfu3mv].[yr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{65EE632B-A9F2-4A67-B40C-0AB704395E0B}' />
+    </worksheet>
+    <worksheet name='Yearly Trends of Firearm Background Checks by Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Yearly Trends of Firearm Background Checks by Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nics-firearm-background-checks-cleaned' name='federated.0o4qpm20273m1e14gw0p70qfu3mv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o4qpm20273m1e14gw0p70qfu3mv'>
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0o4qpm20273m1e14gw0p70qfu3mv].[sum:Pivot Field Values:qk]' scope='rows' value='Number of Background Checks' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0o4qpm20273m1e14gw0p70qfu3mv].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Category:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0o4qpm20273m1e14gw0p70qfu3mv].[none:Pivot Field Names:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0o4qpm20273m1e14gw0p70qfu3mv].[yr:year:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0o4qpm20273m1e14gw0p70qfu3mv].[sum:Pivot Field Values:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o4qpm20273m1e14gw0p70qfu3mv].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.0o4qpm20273m1e14gw0p70qfu3mv].[yr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{E4B3B26D-A8E1-4FF6-A7FF-C03029DABDB0}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Yearly Trend of Firearm Background Checks'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A25652EF-E171-4E5E-AD0C-88147A04C186}' />
+    </window>
+    <window class='worksheet' name='Yearly Trends of Firearm Background Checks by Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0o4qpm20273m1e14gw0p70qfu3mv].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o4qpm20273m1e14gw0p70qfu3mv].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4E11F7CF-75DF-4C0D-ADA0-CE70E1F1D544}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Yearly Trend of Firearm Background Checks' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Yearly Trends of Firearm Background Checks by Type' width='192'>
+      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
+      /w+/URhNPOrEBQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
