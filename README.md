@@ -17,6 +17,9 @@
    - Train Data
 6. Module 4 - Data Visualization
    - Government Data
+7. Module 5 - Foundational Element Creations
+   - Excel
+   - Python
 8. Git Repository
 
 ## 1. Overview
@@ -64,6 +67,14 @@ The repository is structured as follows:
 │   │   └── nics-visualizations-yearly-and-type.twbx
 │   ├── Train Data/
 │   │   └── train-cleaned.rar
+├── module5/
+│   ├── Excel/
+│   │   └── firearm_visualizations.xlsx
+│   ├── Python/
+│   │   ├── Firearm_Data_Visualizations.ipynb
+│   │   ├── trend_over_time.png
+│   │   ├── state_comparison.png
+│   │   └── firearm_types_california.png
 ├── README.md
 ```
 
@@ -177,5 +188,57 @@ This Tableau project presents two visualizations created from the NICS Firearm B
 
 - **Date Format**: The date format in the `month` column was standardized to ensure consistency and compatibility with Tableau visualizations.
 
-## 7. Git Repository
+## 7. Module 5 - Foundational Element Creations
+
+### Firearm Data Visualizations
+This module focuses on creating foundational visualizations of government firearm background check data using Excel and Python. The visualizations explore yearly trends, state-level comparisons, and firearm type breakdowns.
+
+**Data Source**:
+- `nics-firearm-background-checks-cleaned.csv`
+
+**Tools**:
+- Excel
+- Python (Jupyter Notebook)
+
+### Tasks Performed
+
+#### **1. Visualizations in Excel**
+- **Trends Over Time (Line Chart)**:
+  - Aggregated yearly firearm background checks using a Pivot Table.
+  - Created a line chart to visualize trends across all years.
+- **State Comparison (Clustered Bar Chart)**:
+  - Compared state-level firearm background checks across all years using a Pivot Table.
+  - Created a clustered bar chart.
+- **Firearm Types in California (Clustered Column Chart)**:
+  - Compared `Handgun`, `Long Gun`, and `Other` firearm checks within California.
+  - Created a clustered column chart.
+
+**Output**:
+- `firearm_visualizations.xlsx`:
+  - Sheet: `Trends Over Time`
+  - Sheet: `State Comparison`
+  - Sheet: `Firearm Types in California`
+
+#### **2. Visualizations in Python**
+- **Yearly Firearm Trends (Line Chart)**:
+  - Visualized yearly firearm background checks across all years.
+  - **Title**: `Total Firearm Background Checks Over Time`.
+- **State-Wise Firearm Totals for 2023 (Clustered Bar Chart)**:
+  - Focused on state-level totals for 2023 only.
+  - **Title**: `State-Wise Firearm Background Checks (2023)`.
+- **Firearm Types in California (Clustered Column Chart)**:
+  - Compared firearm types in California.
+  - **Title**: `Firearm Types in California`.
+
+**Output**:
+- Jupyter Notebook: `Firearm_Data_Visualizations.ipynb`
+- Visualization Files:
+  - `trend_over_time.png`
+  - `state_comparison.png`
+  - `firearm_types_california.png`
+
+### Summary
+This module highlights the use of Excel and Python to create visualizations for firearm background checks, leveraging Pivot Tables and Matplotlib for insights into trends, state comparisons, and firearm type breakdowns.
+
+## 8. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
