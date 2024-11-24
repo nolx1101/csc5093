@@ -20,7 +20,9 @@
 7. Module 5 - Foundational Element Creations
    - Excel
    - Python
-8. Git Repository
+8. Module 5 - Design Principles: Space, Motion, Value, and Color
+   - Python
+9. Git Repository
 
 ## 1. Overview
 This repository contains assignments focused on data visualization and exploration, utilizing various tools and techniques to create and analyze data-driven insights.
@@ -74,7 +76,10 @@ The repository is structured as follows:
 │   │   ├── Firearm_Data_Visualizations.ipynb
 │   │   ├── trend_over_time.png
 │   │   ├── state_comparison.png
-│   │   └── firearm_types_california.png
+│   │   ├── firearm_types_california.png
+│   │   ├── Ecommerce_Visualizations.ipynb
+│   │   ├── yearly_revenue.png
+│   │   └── delivery_time_distribution.png
 ├── README.md
 ```
 
@@ -240,5 +245,28 @@ This module focuses on creating foundational visualizations of government firear
 ### Summary
 This module highlights the use of Excel and Python to create visualizations for firearm background checks, leveraging Pivot Tables and Matplotlib for insights into trends, state comparisons, and firearm type breakdowns.
 
-## 8. Git Repository
+## 8. Module 5 - Design Principles: Space, Motion, Value, and Color
+
+This module focuses on applying design principles - **space**, **motion**, **value**, and **color** - to create meaningful data visualizations using Python. Two visualizations were created from the e-commerce dataset to effectively demonstrate these principles.
+
+### **Visualizations**
+
+1. **Yearly Revenue Over Time (Line Chart)**:
+   - **Focus**: Value and Motion.
+   - **Description**: This line chart highlights yearly revenue trends, illustrating how revenue evolves over time.
+     - **Value**: The Y-axis represents revenue in dollars, quantifying annual performance.
+     - **Motion**: The progression of years along the X-axis creates an illusion of motion, emphasizing growth trends.
+   - **Output**: `yearly_revenue.png`
+
+2. **Delivery Time Distribution (Histogram)**:
+   - **Focus**: Space and Value.
+   - **Description**: This histogram shows the frequency of delivery times (in days), identifying common delivery durations and highlighting outliers.
+     - **Space**: Evenly spaced bins ensure a clean visualization of delivery times without overlaps or gaps.
+     - **Value**: The Y-axis quantifies the frequency of deliveries, providing actionable insights for optimization.
+   - **Output**: `delivery_time_distribution.png`
+
+### **Notebook**
+- **`Ecommerce_Visualizations.ipynb`**: Contains Python code and visualizations created using design principles.
+
+## 9. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
