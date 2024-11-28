@@ -18,11 +18,11 @@
 6. Module 4 - Data Visualization
    - Government Data
 7. Module 5 - Foundational Element Creations
-   - Excel
-   - Python
+   - Firearm Data Visualizations (Excel and Python)
 8. Module 5 - Design Principles: Space, Motion, Value, and Color
-   - Python
-9. Git Repository
+   - E-commerce Visualizations (Python)
+9. Module 6 - Interactive Dashboard
+10. Git Repository
 
 ## 1. Overview
 This repository contains assignments focused on data visualization and exploration, utilizing various tools and techniques to create and analyze data-driven insights.
@@ -70,16 +70,29 @@ The repository is structured as follows:
 │   ├── Train Data/
 │   │   └── train-cleaned.rar
 ├── module5/
-│   ├── Excel/
-│   │   └── firearm_visualizations.xlsx
-│   ├── Python/
+│   ├── Design_Principles/
+│   │   ├── Ecommerce_Visualizations.ipynb
+│   │   ├── yearly_revenue.png
+│   │   ├── delivery_time_distribution.png
+│   │   └── README.md
+│   ├── Foundational_Element_Creations/
+│   │   ├── firearm_visualizations.xlsx
 │   │   ├── Firearm_Data_Visualizations.ipynb
 │   │   ├── trend_over_time.png
 │   │   ├── state_comparison.png
 │   │   ├── firearm_types_california.png
-│   │   ├── Ecommerce_Visualizations.ipynb
-│   │   ├── yearly_revenue.png
-│   │   └── delivery_time_distribution.png
+│   │   └── README.md
+│   ├── data/
+│   │   ├── nics-firearm-background-checks-cleaned.csv
+│   │   ├── order_items.xlsx
+│   │   └── README.md
+├── module6/
+│   ├── data/
+│   │   ├── nics-firearm-background-checks-cleaned.csv
+│   │   ├── README.md
+│   ├── Firearm_Checks_Dashboard.twb
+│   ├── Details_Notebook_Module6.ipynb
+│   ├── README.md
 ├── README.md
 ```
 
@@ -162,7 +175,6 @@ This dataset contains news articles used for binary classification to determine 
    - **Issue**: 1,886 duplicate rows were found in the dataset. Duplicate rows can lead to inaccuracies in analysis by skewing results, especially in aggregate metrics.
    - **Mitigation**: The 1,886 duplicate rows were identified and removed to ensure the uniqueness and accuracy of each entry.
 
-
 ## 6. Module 4 - Data Visualization
 
 ### Dataset: Government Data - NICS Firearm Background Checks
@@ -195,78 +207,53 @@ This Tableau project presents two visualizations created from the NICS Firearm B
 
 ## 7. Module 5 - Foundational Element Creations
 
-### Firearm Data Visualizations
 This module focuses on creating foundational visualizations of government firearm background check data using Excel and Python. The visualizations explore yearly trends, state-level comparisons, and firearm type breakdowns.
 
-**Data Source**:
-- `nics-firearm-background-checks-cleaned.csv`
+- **Excel Visualizations:**
+  - **Trends Over Time (Line Chart):** Aggregated yearly firearm background checks.
+  - **State Comparison (Bar Chart):** Compared state-level firearm background checks.
+  - **Firearm Types in California (Column Chart):** Compared handgun, long gun, and other checks.
+  - **File:** `firearm_visualizations.xlsx`.
 
-**Tools**:
-- Excel
-- Python (Jupyter Notebook)
+- **Python Visualizations:**
+  - **Yearly Firearm Trends (Line Chart):** Visualized yearly firearm background checks.
+  - **State-Wise Firearm Totals (Bar Chart):** Focused on state-level totals for 2023.
+  - **Firearm Types in California (Column Chart):** Compared firearm types in California.
+  - **Files:**
+    - `trend_over_time.png`
+    - `state_comparison.png`
+    - `firearm_types_california.png`.
 
-### Tasks Performed
-
-#### **1. Visualizations in Excel**
-- **Trends Over Time (Line Chart)**:
-  - Aggregated yearly firearm background checks using a Pivot Table.
-  - Created a line chart to visualize trends across all years.
-- **State Comparison (Clustered Bar Chart)**:
-  - Compared state-level firearm background checks across all years using a Pivot Table.
-  - Created a clustered bar chart.
-- **Firearm Types in California (Clustered Column Chart)**:
-  - Compared `Handgun`, `Long Gun`, and `Other` firearm checks within California.
-  - Created a clustered column chart.
-
-**Output**:
-- `firearm_visualizations.xlsx`:
-  - Sheet: `Trends Over Time`
-  - Sheet: `State Comparison`
-  - Sheet: `Firearm Types in California`
-
-#### **2. Visualizations in Python**
-- **Yearly Firearm Trends (Line Chart)**:
-  - Visualized yearly firearm background checks across all years.
-  - **Title**: `Total Firearm Background Checks Over Time`.
-- **State-Wise Firearm Totals for 2023 (Clustered Bar Chart)**:
-  - Focused on state-level totals for 2023 only.
-  - **Title**: `State-Wise Firearm Background Checks (2023)`.
-- **Firearm Types in California (Clustered Column Chart)**:
-  - Compared firearm types in California.
-  - **Title**: `Firearm Types in California`.
-
-**Output**:
-- Jupyter Notebook: `Firearm_Data_Visualizations.ipynb`
-- Visualization Files:
-  - `trend_over_time.png`
-  - `state_comparison.png`
-  - `firearm_types_california.png`
-
-### Summary
-This module highlights the use of Excel and Python to create visualizations for firearm background checks, leveraging Pivot Tables and Matplotlib for insights into trends, state comparisons, and firearm type breakdowns.
+Key files:
+- **Firearm_Data_Visualizations.ipynb**: Jupyter Notebook documenting the visualization process.
+- **firearm_visualizations.xlsx**: Excel file with foundational visualizations.
 
 ## 8. Module 5 - Design Principles: Space, Motion, Value, and Color
 
-This module focuses on applying design principles - **space**, **motion**, **value**, and **color** - to create meaningful data visualizations using Python. Two visualizations were created from the e-commerce dataset to effectively demonstrate these principles.
+This module focuses on applying design principles—**space**, **motion**, **value**, and **color**—to create meaningful data visualizations using Python and e-commerce data.
 
-### **Visualizations**
+- **Yearly Revenue Over Time (Line Chart):**
+  - Demonstrates motion (progression of years) and value (revenue trends).
+  - **File:** `yearly_revenue.png`.
 
-1. **Yearly Revenue Over Time (Line Chart)**:
-   - **Focus**: Value and Motion.
-   - **Description**: This line chart highlights yearly revenue trends, illustrating how revenue evolves over time.
-     - **Value**: The Y-axis represents revenue in dollars, quantifying annual performance.
-     - **Motion**: The progression of years along the X-axis creates an illusion of motion, emphasizing growth trends.
-   - **Output**: `yearly_revenue.png`
+- **Delivery Time Distribution (Histogram):**
+  - Demonstrates space (proper bin spacing) and value (delivery frequency).
+  - **File:** `delivery_time_distribution.png`.
 
-2. **Delivery Time Distribution (Histogram)**:
-   - **Focus**: Space and Value.
-   - **Description**: This histogram shows the frequency of delivery times (in days), identifying common delivery durations and highlighting outliers.
-     - **Space**: Evenly spaced bins ensure a clean visualization of delivery times without overlaps or gaps.
-     - **Value**: The Y-axis quantifies the frequency of deliveries, providing actionable insights for optimization.
-   - **Output**: `delivery_time_distribution.png`
+Key files:
+- **Ecommerce_Visualizations.ipynb**: Jupyter Notebook documenting the design principles and visualizations.
+- **order_items.xlsx**: Dataset used for e-commerce visualizations.
 
-### **Notebook**
-- **`Ecommerce_Visualizations.ipynb`**: Contains Python code and visualizations created using design principles.
+## 9. Module 6 - Interactive Dashboard
+This module focuses on creating an interactive Tableau dashboard using firearm background check data. The dashboard integrates the following:
+- **Trend Line:** Displays total firearm background checks over time alongside YoY Growth (%).
+- **Map:** Shows the geographic distribution of firearm background checks by state, with filtering options.
+- **Category Breakdown:** Explores the contribution of different firearm types (handgun, long gun, other).
+- **Interactive Features:** Includes state and year filters for synchronized visualizations.
 
-## 9. Git Repository
+Key files:
+- **Firearm_Checks_Dashboard.twb**: Tableau workbook containing the dashboard and visualizations.
+- **details_notebook_module6.ipynb**: Documents the design and functionality of the dashboard.
+
+## 10. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
