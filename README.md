@@ -22,6 +22,7 @@
 8. Module 5 - Design Principles: Space, Motion, Value, and Color
    - E-commerce Visualizations (Python)
 9. Module 6 - Interactive Dashboard
+   - Tableau
 10. Git Repository
 
 ## 1. Overview
@@ -70,6 +71,10 @@ The repository is structured as follows:
 │   ├── Train Data/
 │   │   └── train-cleaned.rar
 ├── module5/
+│   ├── data/
+│   │   ├── nics-firearm-background-checks-cleaned.csv
+│   │   ├── order_items.xlsx
+│   │   └── README.md
 │   ├── Design_Principles/
 │   │   ├── Ecommerce_Visualizations.ipynb
 │   │   ├── yearly_revenue.png
@@ -82,18 +87,14 @@ The repository is structured as follows:
 │   │   ├── state_comparison.png
 │   │   ├── firearm_types_california.png
 │   │   └── README.md
-│   ├── data/
-│   │   ├── nics-firearm-background-checks-cleaned.csv
-│   │   ├── order_items.xlsx
-│   │   └── README.md
 ├── module6/
 │   ├── data/
 │   │   ├── nics-firearm-background-checks-cleaned.csv
-│   │   ├── README.md
+│   │   └── README.md
 │   ├── Firearm_Checks_Dashboard.twb
 │   ├── Details_Notebook_Module6.ipynb
-│   ├── README.md
-├── README.md
+│   └── README.md
+└── README.md
 ```
 
 ## 3. Module 2 - Tools
@@ -207,7 +208,7 @@ This Tableau project presents two visualizations created from the NICS Firearm B
 
 ## 7. Module 5 - Foundational Element Creations
 
-This module focuses on creating foundational visualizations of government firearm background check data using Excel and Python. The visualizations explore yearly trends, state-level comparisons, and firearm type breakdowns.
+This module focuses on creating foundational visualizations using Excel and Python. Government firearm background check data is analyzed to explore yearly trends, state-level comparisons, and firearm type breakdowns.
 
 - **Excel Visualizations:**
   - **Trends Over Time (Line Chart):** Aggregated yearly firearm background checks.
@@ -225,12 +226,12 @@ This module focuses on creating foundational visualizations of government firear
     - `firearm_types_california.png`.
 
 Key files:
-- **Firearm_Data_Visualizations.ipynb**: Jupyter Notebook documenting the visualization process.
+- **Firearm_Data_Visualizations.ipynb**: Notebook containing Python code and outputs for creating foundational visualizations of firearm background check data.
 - **firearm_visualizations.xlsx**: Excel file with foundational visualizations.
 
 ## 8. Module 5 - Design Principles: Space, Motion, Value, and Color
 
-This module focuses on applying design principles—**space**, **motion**, **value**, and **color**—to create meaningful data visualizations using Python and e-commerce data.
+This module focuses on applying design principles - **space**, **motion**, **value**, and **color** - to create meaningful data visualizations. The E-commerce dataset was used to develop insightful and visually engaging representations with Python.
 
 - **Yearly Revenue Over Time (Line Chart):**
   - Demonstrates motion (progression of years) and value (revenue trends).
@@ -241,11 +242,12 @@ This module focuses on applying design principles—**space**, **motion**, **val
   - **File:** `delivery_time_distribution.png`.
 
 Key files:
-- **Ecommerce_Visualizations.ipynb**: Jupyter Notebook documenting the design principles and visualizations.
-- **order_items.xlsx**: Dataset used for e-commerce visualizations.
+- **Ecommerce_Visualizations.ipynb**: Notebook containing the Python code and visualizations demonstrating the application of design principles.
+- **order_items.xlsx**: Dataset used for E-commerce visualizations.
 
 ## 9. Module 6 - Interactive Dashboard
-This module focuses on creating an interactive Tableau dashboard using firearm background check data. The dashboard integrates the following:
+This module focuses on creating an interactive dashboard in Tableau, utilizing firearm background check data for the visualizations.
+The dashboard integrates the following:
 - **Trend Line:** Displays total firearm background checks over time alongside YoY Growth (%).
 - **Map:** Shows the geographic distribution of firearm background checks by state, with filtering options.
 - **Category Breakdown:** Explores the contribution of different firearm types (handgun, long gun, other).
@@ -253,7 +255,7 @@ This module focuses on creating an interactive Tableau dashboard using firearm b
 
 Key files:
 - **Firearm_Checks_Dashboard.twb**: Tableau workbook containing the dashboard and visualizations.
-- **details_notebook_module6.ipynb**: Documents the design and functionality of the dashboard.
+- **Details_Notebook_Module6.ipynb**: Documents the design and functionality of the dashboard.
 
 ## 10. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.

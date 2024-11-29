@@ -1,6 +1,6 @@
 # Foundational Element Creations
 
-This folder contains the work for the "Foundational Element Creations" assignment, which focuses on creating foundational visualizations using Excel and Python to analyze firearm background check data.
+This folder contains the work for the 'Foundational Element Creations' assignment, which focuses on creating foundational visualizations using Excel and Python with firearm background check data.
 
 ## Contents
 

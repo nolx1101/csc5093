@@ -1,6 +1,6 @@
 # Design Principles: Space, Motion, Value, and Color
 
-This folder contains the work for the "Design Principles" assignment, which focuses on applying the principles of space, motion, value, and color to create meaningful visualizations using Python and data from the E-commerce dataset.
+This folder contains the work for the 'Design Principles' assignment, which focuses on applying the principles of space, motion, value, and color to create meaningful visualizations using Python with data from the E-commerce dataset.
 
 ## Contents
 

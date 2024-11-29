@@ -16,5 +16,5 @@ This directory contains the dataset used for the Firearm Checks Dashboard in Mod
   - Additional administrative and miscellaneous checks are included.
 
 ## Notes
-- Missing values and irrelevant columns were handled during data cleaning in a previous module.
+- Missing values and irrelevant columns were handled during data cleaning.
 - This cleaned dataset has been optimized for Tableau integration.
