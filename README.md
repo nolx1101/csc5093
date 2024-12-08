@@ -23,7 +23,8 @@
    - E-commerce Visualizations (Python)
 9. Module 6 - Interactive Dashboard
    - Tableau
-10. Git Repository
+10. Module 7 - Visual Resume
+11. Git Repository
 
 ## 1. Overview
 This repository contains assignments focused on data visualization and exploration, utilizing various tools and techniques to create and analyze data-driven insights.
@@ -93,6 +94,13 @@ The repository is structured as follows:
 │   │   └── README.md
 │   ├── Firearm_Checks_Dashboard.twb
 │   ├── Details_Notebook_Module6.ipynb
+│   └── README.md
+├── module6/
+│   ├── data/
+│   │   ├── Resume.xlsx
+│   │   └── README.md
+│   ├── Visual_Resume.twbx
+│   ├── Details_Visual_Resume_Module7.ipynb
 │   └── README.md
 └── README.md
 ```
@@ -257,5 +265,28 @@ Key files:
 - **Firearm_Checks_Dashboard.twb**: Tableau workbook containing the dashboard and visualizations.
 - **Details_Notebook_Module6.ipynb**: Documents the design and functionality of the dashboard.
 
-## 10. Git Repository
+## 10. Module 7 - Visual Resume 
+
+This module focuses on creating a **visual resume** in Tableau, combining multiple visualizations into an interactive dashboard. The visualizations highlight education, skills, job locations, and hobbies.
+
+### Visualizations:
+1. **Gantt Chart (Education Timeline):**
+   - Displays milestones in education over time.
+   - Shows institutions attended, degrees obtained, and timeline information.
+
+2. **Skills Proficiency (Bar Chart):**
+   - Highlights key skills and their respective proficiency levels.
+
+3. **Job Locations (Map):**
+   - Maps job experiences with detailed information on companies, roles, and timelines.
+
+4. **Hobbies (Bubble Chart):**
+   - Visualizes hobbies with corresponding time spent, represented as bubble sizes.
+
+### Key Files:
+- **Visual_Resume.twbx**: Tableau workbook containing all visualizations.
+- **Resume.xlsx**: Dataset for education, job details, and hobbies.
+- **README.md**: Detailed documentation for Module 7.
+
+## 11. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
