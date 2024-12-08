@@ -13,7 +13,7 @@ This folder contains the source data used for the visual resume in Tableau. The 
    - **Purpose**: Used for the bar chart to visualize skill proficiency levels.
 
 3. **Experience**:
-   - **Columns**: Job Title, Company, Start Date, End Date, Location.
+   - **Columns**: Job Title, Company, Start Date, End Date, Location, Combined Details.
    - **Purpose**: Used for the map to display job locations and details.
 
 4. **Hobbies**:

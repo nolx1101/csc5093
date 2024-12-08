@@ -18,6 +18,7 @@ This module demonstrates the creation of a **visual resume** in Tableau, integra
 
 ## Key Files
 - **Visual_Resume.twbx**: Tableau workbook containing the visualizations.
+- **Details_Visual_Resume_Module7.ipynb**: Notebook file explaining the visualizations and their creation.
 - **Resume.xlsx**: Dataset with details for education, skills, job locations, and hobbies.
 
 ## Additional Notes

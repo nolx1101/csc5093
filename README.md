@@ -95,7 +95,7 @@ The repository is structured as follows:
 │   ├── Firearm_Checks_Dashboard.twb
 │   ├── Details_Notebook_Module6.ipynb
 │   └── README.md
-├── module6/
+├── module7/
 │   ├── data/
 │   │   ├── Resume.xlsx
 │   │   └── README.md
@@ -285,8 +285,7 @@ This module focuses on creating a **visual resume** in Tableau, combining multip
 
 ### Key Files:
 - **Visual_Resume.twbx**: Tableau workbook containing all visualizations.
-- **Resume.xlsx**: Dataset for education, job details, and hobbies.
-- **README.md**: Detailed documentation for Module 7.
+- **Details_Visual_Resume_Module7.ipynb**: Notebook file explaining the visualizations and their creation.
 
 ## 11. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
