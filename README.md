@@ -104,6 +104,7 @@ The repository is structured as follows:
 │   ├── Visual_Resume.twbx
 │   ├── Details_Visual_Resume_Module7.ipynb
 │   ├── Border_Crossing_Analysis.twb
+│   ├── Module 7 Final Presentation Story Outline.docx
 │   └── README.md
 └── README.md
 ```

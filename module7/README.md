@@ -3,7 +3,7 @@
 ## Overview
 This module contains two Tableau projects:
 1. **Visual Resume**: A dashboard visualizing education, skills, job locations, and hobbies.
-2. **Border Crossing Analysis**: A final project focusing on analyzing and storytelling using border crossing entry data.
+2. **Border Crossing Analysis**: The final project focusing on analyzing and storytelling using border crossing entry data.
 
 Each project demonstrates the application of Tableau for interactive data visualizations and storytelling.
 
@@ -69,5 +69,6 @@ module7/
 ├── Visual_Resume.twb
 ├── Details_Visual_Resume_Module7.ipynb
 ├── Border_Crossing_Analysis.twb
+├── Module 7 Final Presentation Story Outline.docx
 └── README.md
 ```
