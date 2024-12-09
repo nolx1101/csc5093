@@ -16,7 +16,7 @@ The Visual Resume showcases key personal and professional milestones using inter
 1. **Education Timeline (Gantt Chart)**:
    - Displays educational milestones over time, including institutions attended and degrees obtained.
 2. **Skills Proficiency (Bar Chart)**:
-   - Highlights proficiency levels for technical and soft skills.
+   - Highlights proficiency levels for technical skills.
 3. **Job Locations (Map)**:
    - Maps job experiences with details on roles, companies, and locations.
 4. **Hobbies (Bubble Chart)**:
