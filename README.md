@@ -24,7 +24,8 @@
 9. Module 6 - Interactive Dashboard
    - Tableau
 10. Module 7 - Visual Resume
-11. Git Repository
+11. Module 7 - Final Presentation Story Outline
+12. Git Repository
 
 ## 1. Overview
 This repository contains assignments focused on data visualization and exploration, utilizing various tools and techniques to create and analyze data-driven insights.
@@ -98,9 +99,11 @@ The repository is structured as follows:
 ├── module7/
 │   ├── data/
 │   │   ├── Resume.xlsx
+│   │   ├── Border_Crossing_Entry_Data.xlsx
 │   │   └── README.md
 │   ├── Visual_Resume.twbx
 │   ├── Details_Visual_Resume_Module7.ipynb
+│   ├── Border_Crossing_Analysis.twb
 │   └── README.md
 └── README.md
 ```
@@ -286,6 +289,34 @@ This module focuses on creating a **visual resume** in Tableau, combining multip
 ### Key Files:
 - **Visual_Resume.twbx**: Tableau workbook containing all visualizations.
 - **Details_Visual_Resume_Module7.ipynb**: Notebook file explaining the visualizations and their creation.
+
+## 11. Module 7 - Final Presentation Story Outline
+
+This module outlines the final presentation for the **Border Crossing Analysis Project**, leveraging Tableau’s storytelling features. The document provides context, goals, and the sequence of visual elements used in the story.
+
+### Context
+- **Audience**: Policymakers, economists, transportation planners, and regional stakeholders.
+- **Technology**: Tableau's interactive dashboard and storytelling tools.
+
+### Goal
+To analyze and present border crossing trends, regional differences, and transportation mode distributions, providing insights for infrastructure optimization and resource planning.
+
+### Key Story Points
+1. **Texas Insights**:
+   - Focuses on border crossing data specific to Texas.
+2. **Pedestrian Crossings**:
+   - Highlights trends in pedestrian crossings across regions.
+3. **U.S.-Canada Border**:
+   - Analyzes northern border crossing activity.
+4. **San Ysidro Port Analysis**:
+   - Detailed insights into one of the busiest U.S.-Mexico ports.
+5. **Peak Month: August**:
+   - Explores trends in the highest activity month for crossings.
+
+### Key Files
+- **Border_Crossing_Analysis.twb**: Tableau workbook containing the analysis and stories.
+- **Module 7 Final Presentation Story Outline.docx**: Document outlining the presentation story.
+- **README.md**: Documentation for the project.
 
 ## 11. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
