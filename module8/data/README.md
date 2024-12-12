@@ -5,7 +5,7 @@ This folder contains the dataset used for the **Border Crossing Analysis** proje
 
 ## Files
 
-### `Border_Crossing_Entry_Data.xlsx`
+### `Border_Crossing_Entry_Data.csv`
 - **Description**: This dataset contains monthly records of border crossings at U.S.-Canada and U.S.-Mexico borders. It includes information on transportation modes, crossing volumes, and geographic locations (ports and borders).
 - **Source**: Bureau of Transportation Statistics, Data.gov.
 - **Format**: CSV file (`.csv`).
@@ -31,7 +31,7 @@ This dataset is used in:
 ### Recommended Tools
 - **Tableau**: For interactive visualizations and dashboard creation.
 - **Excel**: For initial exploration and modifications if needed.
-- **Python**: For advanced data preprocessing (if applicable).
+- **Python**: For advanced data preprocessing.
 
 ## Source Citation
-- Bureau of Transportation Statistics. (2024). *Border Crossing Entry Data*. Retrieved December 1, 2024, from [https://catalog.data.gov/dataset/border-crossing-entry-data-683ae](https://catalog.data.gov/dataset/border-crossing-entry-data-683ae).
+- Bureau of Transportation Statistics. (2024). *Border Crossing Entry Data*. Retrieved from [https://catalog.data.gov/dataset/border-crossing-entry-data-683ae](https://catalog.data.gov/dataset/border-crossing-entry-data-683ae).
