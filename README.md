@@ -25,7 +25,8 @@
    - Tableau
 10. Module 7 - Visual Resume
 11. Module 7 - Final Presentation Story Outline
-12. Git Repository
+12. Module 8 - Final Presentation
+13. Git Repository
 
 ## 1. Overview
 This repository contains assignments focused on data visualization and exploration, utilizing various tools and techniques to create and analyze data-driven insights.
@@ -99,12 +100,21 @@ The repository is structured as follows:
 ├── module7/
 │   ├── data/
 │   │   ├── Resume.xlsx
-│   │   ├── Border_Crossing_Entry_Data.xlsx
+│   │   ├── Border_Crossing_Entry_Data.csv
 │   │   └── README.md
 │   ├── Visual_Resume.twbx
 │   ├── Details_Visual_Resume_Module7.ipynb
 │   ├── Border_Crossing_Analysis.twb
 │   ├── Module 7 Final Presentation Story Outline.docx
+│   └── README.md
+├── module8/
+│   ├── data/
+│   │   ├── Border_Crossing_Entry_Data.csv
+│   │   └── README.md
+│   ├── Border_Crossing_Analysis.twbx
+│   ├── Border Crossing Entry Data Analysis.docx
+│   ├── Border Crossing Analysis Presentation.pptx
+│   ├── Border Crossing Analysis Video.mp4
 │   └── README.md
 └── README.md
 ```
@@ -319,5 +329,33 @@ To analyze and present border crossing trends, regional differences, and transpo
 - **Module 7 Final Presentation Story Outline.docx**: Document outlining the presentation story.
 - **README.md**: Documentation for the project.
 
-## 11. Git Repository
+## 12. Module 8 - Final Presentation
+
+### Context
+The **Final Presentation** module presents an analysis of U.S. border crossing data using Tableau to create interactive visualizations and an explanatory dashboard.
+
+### Key Components
+- **Dataset**: Border Crossing Entry Data
+  - *Source*: Bureau of Transportation Statistics (Data.gov)
+  - *File*: `Border_Crossing_Entry_Data.csv`
+- **Visualizations**:
+  1. Line chart: Temporal trends in border crossings
+  2. Bar chart: Comparison of crossing types by border
+  3. Geographic map: State-level activity
+  4. Bubble chart: Distribution of crossing types
+  5. Treemap: Ports by total crossing volume
+- **Deliverables**:
+  - Analysis document: `Border Crossing Entry Data Analysis.docx`
+  - Tableau workbook: `Border_Crossing_Analysis.twb`
+  - Presentation slides: `Border Crossing Analysis Presentation.pptx`
+  - Recorded presentation: `Border Crossing Analysis Video.mp4`
+
+### Key Files
+- `Border_Crossing_Entry_Data.csv`: Cleaned dataset used for analysis
+- `Border_Crossing_Analysis.twb`: Tableau workbook with all visualizations
+- `Border Crossing Entry Data Analysis.docx`: Comprehensive analysis report
+- `Border Crossing Analysis Presentation.pptx`: Presentation slides
+- `Border Crossing Analysis Video.mp4`: Recorded presentation video
+
+## 13. Git Repository
 All files are organized and version-controlled using Git. The complete repository is available for viewing and cloning via GitHub.
